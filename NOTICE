@@ -1,0 +1,8 @@
+This project contains F01/F02 prediction code extracted from Open Athena's pdbthink.
+Upstream: https://github.com/Open-Athena/pdbthink
+The upstream Apache-2.0 licence is retained in LICENSE.
+See data/provenance/extraction.json for source file hashes and extraction details.
+The Python namespace pdbthink is retained for compatibility; install this standalone
+project in a separate environment from the original pdbthink repository.
+Experimental PDB data originate from RCSB PDB; computational source data originate
+from the versioned MarinFold exp278 experiment. Their provenance is retained.

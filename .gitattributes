@@ -1,0 +1,5 @@
+third_party/TMscore.cpp -text
+data/frozen/** -text
+data/provenance/** -text
+data/prediction_sources/** -text
+configs/prediction* -text

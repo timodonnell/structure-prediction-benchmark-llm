@@ -1,0 +1,43 @@
+{
+  "panels": {
+    "F01": {
+      "panel": "F01",
+      "instances": 10,
+      "renders": 10,
+      "dataset_fingerprint": "18e8b6a1b47ce09d06f4c7cdcacd6d31ef1902b727fe90a7e5a3d12860ea2208",
+      "frozen": true,
+      "mock_accuracy_eligible": 10,
+      "mock_primary_lddt_ca": 1.0,
+      "mock_primary_tm_score": 1.0
+    },
+    "F02": {
+      "panel": "F02",
+      "instances": 10,
+      "renders": 10,
+      "dataset_fingerprint": "e9966ef83f3b1470a055bc2fce58a28ec9dbced03f13090a50fc1705b9e1e7b1",
+      "frozen": true,
+      "mock_accuracy_eligible": 10,
+      "mock_primary_lddt_ca": 1.0,
+      "mock_primary_tm_score": 1.0
+    }
+  },
+  "model_evaluations_launched": false,
+  "af2_inference_rerun": false,
+  "unit_tests": {
+    "passed": 46,
+    "failed": 0,
+    "skipped": 0
+  },
+  "python": "3.11.14",
+  "packages": {
+    "numpy": "2.4.6",
+    "gemmi": "0.7.5",
+    "pyyaml": "6.0.3",
+    "pydantic": "2.14.0",
+    "tiktoken": "0.14.0",
+    "pyarrow": "26.0.0",
+    "tmtools": "0.3.0",
+    "biopython": "1.88"
+  },
+  "input_archive_sha256": "2d26bab28d6b1455126cf3cfeac9a6fa23fb9bdb6207ed85a17ee29c1d4bbfc3"
+}

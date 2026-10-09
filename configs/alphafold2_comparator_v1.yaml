@@ -1,0 +1,18 @@
+comparator_version: alphafold2-colabfold-v1.0.0
+model_id: alphafold2-colabfold-1.6.2-msa
+colabfold_version: 1.6.2
+alphafold_colabfold_version: 2.3.18
+model_type: alphafold2_ptm
+num_models: 5
+model_order: [1, 2, 3, 4, 5]
+num_seeds: 1
+random_seed: 20260911
+num_recycle: 3
+recycle_early_stop_tolerance: 0.0
+msa_mode: mmseqs2_uniref_env
+templates: false
+relax: false
+rank: plddt
+selection: rank_001_by_internal_confidence_never_reference_accuracy
+output_adapter: backbone_N_CA_C_O_chain_A_full_sequence_v1
+note: Specialist MSA-assisted comparator; structural accuracy after deterministic format normalisation. Not a tool-free LLM or a grammar baseline.

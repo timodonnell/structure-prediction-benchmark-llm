@@ -1,0 +1,669 @@
+{
+  "name": "pdbthink_prediction_pilot",
+  "version": "1.0.0",
+  "task_track": "sequence_prediction",
+  "definition_version": "prediction-v1.0.0",
+  "config_sha256": "8f0c57272b3a1983666740890315d11b626ad45162871e33161fbf916a0982c9",
+  "prompt_fingerprint": "da6f56ab5c1fc828",
+  "source": {
+    "repository": "https://github.com/Open-Athena/MarinFold",
+    "revision": "cba806f10f05a8d34dbf307f705bccf028f2c3f0",
+    "experiment": "exp278_data_proteina_structural_diversity",
+    "subset": "completed-pilot-reference-screen",
+    "reference_geometry": "esmfold_refold",
+    "secondary_geometry": "proteina_original_ca"
+  },
+  "source_parquet_sha256s": {
+    "candidates.parquet:l100-screen": "4376501148f10fd6d6ab8f51072546c5e937b45cb0f0b933ff233f0170cc22c1",
+    "candidates.parquet:l200-screen": "49486dc034a88b640ba6aab6cac5548a671d9d7a062d2cdd0309d9cb08e6e551",
+    "candidates.parquet:l300-screen": "257513f9922ab144e39437c8cc4eef6c5c355ca612c67c9ebaca49c6b8820b97",
+    "candidates.parquet:l400-screen": "a72c2f375d0a4c6e0207f647c9eea4fd49af286e8b5f66f7c15e62f5cd0e6e19",
+    "candidates.parquet:l500-screen": "eff3efaddd92841616a1e09f1ce1988e700a0496d7a0dcbc16c99734fda1b2b9",
+    "candidates.parquet:l60-screen": "7446ae7646b8742faab81278621e23feb62b46f6fdd35a877adc515dda2f1c65"
+  },
+  "retention_sha256": "3ad79ff02a5e9560de1f9f64db14c28de253cc380bd235e1a09ddbb2cbb0a61e",
+  "quality_sha256": "3a2c4143802e9fc796ab6e81c68eccba7a69acd86b79f12a58c3e6d2ff33cd9d",
+  "n_source": 1536,
+  "n_eligible": 494,
+  "n_instances": 10,
+  "n_renders": 10,
+  "realised_counts": {
+    "F01": 10
+  },
+  "selection": [
+    {
+      "example": "synthetic-01",
+      "semantic_instance_id": "F01-587464cc4e9cb8d5",
+      "stem": "proteina-5d0a4630c035b842d19d",
+      "length": 60,
+      "plddt": 87.27690577507019,
+      "scrmsd": 1.0182770969872639,
+      "alpha": 0.3333333333333333,
+      "beta": 0.4,
+      "coil": 0.26666666666666666,
+      "fine_cluster": "proteina-5d0a4630c035b842d19d",
+      "reference_to_design": {
+        "lddt_ca": 0.9078545329075621,
+        "tm_score": 0.8899,
+        "gdt_ts": 0.95,
+        "gdt_ha": 0.8333,
+        "rmsd_ca": 1.018
+      }
+    },
+    {
+      "example": "synthetic-02",
+      "semantic_instance_id": "F01-b6c11f243242150e",
+      "stem": "proteina-328857d989f2700fd5de",
+      "length": 60,
+      "plddt": 91.4868712425232,
+      "scrmsd": 1.1254737426287205,
+      "alpha": 0.0,
+      "beta": 0.23333333333333334,
+      "coil": 0.7666666666666667,
+      "fine_cluster": "proteina-328857d989f2700fd5de",
+      "reference_to_design": {
+        "lddt_ca": 0.9420716789620294,
+        "tm_score": 0.8861,
+        "gdt_ts": 0.9208,
+        "gdt_ha": 0.8083,
+        "rmsd_ca": 1.125
+      }
+    },
+    {
+      "example": "synthetic-03",
+      "semantic_instance_id": "F01-61e41616579b0f59",
+      "stem": "proteina-938b23882ed36cdd4619",
+      "length": 100,
+      "plddt": 86.51357889175415,
+      "scrmsd": 0.9655251470423892,
+      "alpha": 0.0,
+      "beta": 0.38,
+      "coil": 0.62,
+      "fine_cluster": "proteina-938b23882ed36cdd4619",
+      "reference_to_design": {
+        "lddt_ca": 0.9007658370055744,
+        "tm_score": 0.9441,
+        "gdt_ts": 0.9425,
+        "gdt_ha": 0.8025,
+        "rmsd_ca": 0.966
+      }
+    },
+    {
+      "example": "synthetic-04",
+      "semantic_instance_id": "F01-4951cef11833ed08",
+      "stem": "proteina-05e1d3d5bf4adb5fadee",
+      "length": 100,
+      "plddt": 82.86089301109314,
+      "scrmsd": 0.8881270473652051,
+      "alpha": 0.0,
+      "beta": 0.0,
+      "coil": 1.0,
+      "fine_cluster": "proteina-05e1d3d5bf4adb5fadee",
+      "reference_to_design": {
+        "lddt_ca": 0.8862251496461035,
+        "tm_score": 0.9499,
+        "gdt_ts": 0.9575,
+        "gdt_ha": 0.81,
+        "rmsd_ca": 0.888
+      }
+    },
+    {
+      "example": "synthetic-05",
+      "semantic_instance_id": "F01-2f4c0a687f1bc124",
+      "stem": "proteina-c56ce7106006fe0731ff",
+      "length": 200,
+      "plddt": 89.36487436294556,
+      "scrmsd": 1.0980543167667622,
+      "alpha": 0.075,
+      "beta": 0.605,
+      "coil": 0.32,
+      "fine_cluster": "proteina-c56ce7106006fe0731ff",
+      "reference_to_design": {
+        "lddt_ca": 0.8943601626237543,
+        "tm_score": 0.9618,
+        "gdt_ts": 0.9075,
+        "gdt_ha": 0.73,
+        "rmsd_ca": 1.098
+      }
+    },
+    {
+      "example": "synthetic-06",
+      "semantic_instance_id": "F01-b375db46e3d87e26",
+      "stem": "proteina-04fa9b5a285c064f7097",
+      "length": 200,
+      "plddt": 77.45307683944702,
+      "scrmsd": 1.987475637261611,
+      "alpha": 0.44,
+      "beta": 0.145,
+      "coil": 0.415,
+      "fine_cluster": "proteina-04fa9b5a285c064f7097",
+      "reference_to_design": {
+        "lddt_ca": 0.8325431483617136,
+        "tm_score": 0.916,
+        "gdt_ts": 0.8263,
+        "gdt_ha": 0.6262,
+        "rmsd_ca": 1.987
+      }
+    },
+    {
+      "example": "synthetic-07",
+      "semantic_instance_id": "F01-c3c56cf1312431e3",
+      "stem": "proteina-93da499d188caa4e0493",
+      "length": 300,
+      "plddt": 92.5122618675232,
+      "scrmsd": 0.6998919465002641,
+      "alpha": 0.0,
+      "beta": 0.41,
+      "coil": 0.59,
+      "fine_cluster": "proteina-93da499d188caa4e0493",
+      "reference_to_design": {
+        "lddt_ca": 0.9366258934061502,
+        "tm_score": 0.9884,
+        "gdt_ts": 0.975,
+        "gdt_ha": 0.8617,
+        "rmsd_ca": 0.7
+      }
+    },
+    {
+      "example": "synthetic-08",
+      "semantic_instance_id": "F01-bec0985ae3f54ca2",
+      "stem": "proteina-a525107988f39ac5f3b2",
+      "length": 300,
+      "plddt": 86.14042401313782,
+      "scrmsd": 1.4258855668581352,
+      "alpha": 0.2866666666666667,
+      "beta": 0.24,
+      "coil": 0.47333333333333333,
+      "fine_cluster": "proteina-a525107988f39ac5f3b2",
+      "reference_to_design": {
+        "lddt_ca": 0.9159154337042681,
+        "tm_score": 0.9552,
+        "gdt_ts": 0.8608,
+        "gdt_ha": 0.7008,
+        "rmsd_ca": 1.426
+      }
+    },
+    {
+      "example": "synthetic-09",
+      "semantic_instance_id": "F01-605dde0ad70c7b76",
+      "stem": "proteina-d59766ef4c782ea864bc",
+      "length": 400,
+      "plddt": 95.95316648483276,
+      "scrmsd": 1.0312167635276543,
+      "alpha": 0.0,
+      "beta": 0.5625,
+      "coil": 0.4375,
+      "fine_cluster": "proteina-d59766ef4c782ea864bc",
+      "reference_to_design": {
+        "lddt_ca": 0.9578225324021165,
+        "tm_score": 0.9802,
+        "gdt_ts": 0.9081,
+        "gdt_ha": 0.7469,
+        "rmsd_ca": 1.031
+      }
+    },
+    {
+      "example": "synthetic-10",
+      "semantic_instance_id": "F01-f0544b9cac11e420",
+      "stem": "proteina-e44a96a07b08e3625dca",
+      "length": 500,
+      "plddt": 87.7533495426178,
+      "scrmsd": 1.6673249334400584,
+      "alpha": 0.69,
+      "beta": 0.056,
+      "coil": 0.254,
+      "fine_cluster": "proteina-e44a96a07b08e3625dca",
+      "reference_to_design": {
+        "lddt_ca": 0.9255863310464946,
+        "tm_score": 0.9587,
+        "gdt_ts": 0.81,
+        "gdt_ha": 0.619,
+        "rmsd_ca": 1.667
+      }
+    }
+  ],
+  "pairwise_tm_similarity": [
+    [
+      1.0,
+      0.36301204313089885,
+      0.49474420303819183,
+      0.23214161798407737,
+      0.5962746238679087,
+      0.370996174589291,
+      0.5178724013724576,
+      0.4990551770390636,
+      0.24086771373605484,
+      0.48717747086280255
+    ],
+    [
+      0.36301204313089885,
+      1.0,
+      0.3472047884110596,
+      0.23504488404157223,
+      0.32003546339630584,
+      0.2703549619517181,
+      0.3791007752223779,
+      0.30375868689261887,
+      0.28761577646517406,
+      0.35365728972002813
+    ],
+    [
+      0.49474420303819183,
+      0.3472047884110596,
+      1.0,
+      0.2653744661326116,
+      0.506357079332076,
+      0.2881504924817408,
+      0.3371976445720172,
+      0.312860336504625,
+      0.24649656064499442,
+      0.3524943418820196
+    ],
+    [
+      0.23214161798407737,
+      0.23504488404157223,
+      0.2653744661326116,
+      1.0,
+      0.2711397468957951,
+      0.44696033881957736,
+      0.30142666940624674,
+      0.4288314581029222,
+      0.5808467205975839,
+      0.3906682301449993
+    ],
+    [
+      0.5962746238679087,
+      0.32003546339630584,
+      0.506357079332076,
+      0.2711397468957951,
+      1.0,
+      0.3003801165444363,
+      0.36432341834251075,
+      0.30930265852739347,
+      0.23883957162842426,
+      0.3493469477918994
+    ],
+    [
+      0.370996174589291,
+      0.2703549619517181,
+      0.2881504924817408,
+      0.44696033881957736,
+      0.3003801165444363,
+      1.0,
+      0.37110949626322515,
+      0.4280460164832117,
+      0.3077025571927068,
+      0.39121869811926424
+    ],
+    [
+      0.5178724013724576,
+      0.3791007752223779,
+      0.3371976445720172,
+      0.30142666940624674,
+      0.36432341834251075,
+      0.37110949626322515,
+      1.0,
+      0.31053691504409725,
+      0.22274220824753427,
+      0.30988108561852773
+    ],
+    [
+      0.4990551770390636,
+      0.30375868689261887,
+      0.312860336504625,
+      0.4288314581029222,
+      0.30930265852739347,
+      0.4280460164832117,
+      0.31053691504409725,
+      1.0,
+      0.30072638958446285,
+      0.3276674551315828
+    ],
+    [
+      0.24086771373605484,
+      0.28761577646517406,
+      0.24649656064499442,
+      0.5808467205975839,
+      0.23883957162842426,
+      0.3077025571927068,
+      0.22274220824753427,
+      0.30072638958446285,
+      1.0,
+      0.2257617284920075
+    ],
+    [
+      0.48717747086280255,
+      0.35365728972002813,
+      0.3524943418820196,
+      0.3906682301449993,
+      0.3493469477918994,
+      0.39121869811926424,
+      0.30988108561852773,
+      0.3276674551315828,
+      0.2257617284920075,
+      1.0
+    ]
+  ],
+  "selection_log": [
+    {
+      "stem": "proteina-e44a96a07b08e3625dca",
+      "comparisons": []
+    },
+    {
+      "stem": "proteina-d59766ef4c782ea864bc",
+      "comparisons": [
+        {
+          "other": "proteina-e44a96a07b08e3625dca",
+          "tm": 0.2257617284920075,
+          "identity": 0.1275,
+          "coverage": 0.9625
+        }
+      ]
+    },
+    {
+      "stem": "proteina-93da499d188caa4e0493",
+      "comparisons": [
+        {
+          "other": "proteina-e44a96a07b08e3625dca",
+          "tm": 0.30988108561852773,
+          "identity": 0.19333333333333333,
+          "coverage": 0.9966666666666667
+        },
+        {
+          "other": "proteina-d59766ef4c782ea864bc",
+          "tm": 0.22274220824753424,
+          "identity": 0.15333333333333332,
+          "coverage": 0.8433333333333334
+        }
+      ]
+    },
+    {
+      "stem": "proteina-a525107988f39ac5f3b2",
+      "comparisons": [
+        {
+          "other": "proteina-e44a96a07b08e3625dca",
+          "tm": 0.32766745513158285,
+          "identity": 0.21333333333333335,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-d59766ef4c782ea864bc",
+          "tm": 0.3007263895844629,
+          "identity": 0.16666666666666666,
+          "coverage": 0.9933333333333333
+        },
+        {
+          "other": "proteina-93da499d188caa4e0493",
+          "tm": 0.31053691504409725,
+          "identity": 0.17333333333333334,
+          "coverage": 0.9
+        }
+      ]
+    },
+    {
+      "stem": "proteina-c56ce7106006fe0731ff",
+      "comparisons": [
+        {
+          "other": "proteina-e44a96a07b08e3625dca",
+          "tm": 0.3493469477918994,
+          "identity": 0.275,
+          "coverage": 0.995
+        },
+        {
+          "other": "proteina-d59766ef4c782ea864bc",
+          "tm": 0.23883957162842417,
+          "identity": 0.205,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-93da499d188caa4e0493",
+          "tm": 0.3643234183425107,
+          "identity": 0.195,
+          "coverage": 0.95
+        },
+        {
+          "other": "proteina-a525107988f39ac5f3b2",
+          "tm": 0.30930265852739347,
+          "identity": 0.24,
+          "coverage": 1.0
+        }
+      ]
+    },
+    {
+      "stem": "proteina-04fa9b5a285c064f7097",
+      "comparisons": [
+        {
+          "other": "proteina-e44a96a07b08e3625dca",
+          "tm": 0.3912186981192641,
+          "identity": 0.3,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-d59766ef4c782ea864bc",
+          "tm": 0.3077025571927067,
+          "identity": 0.17,
+          "coverage": 0.96
+        },
+        {
+          "other": "proteina-93da499d188caa4e0493",
+          "tm": 0.3711094962632251,
+          "identity": 0.19,
+          "coverage": 0.925
+        },
+        {
+          "other": "proteina-a525107988f39ac5f3b2",
+          "tm": 0.4280460164832117,
+          "identity": 0.215,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-c56ce7106006fe0731ff",
+          "tm": 0.3003801165444363,
+          "identity": 0.215,
+          "coverage": 0.94
+        }
+      ]
+    },
+    {
+      "stem": "proteina-05e1d3d5bf4adb5fadee",
+      "comparisons": [
+        {
+          "other": "proteina-e44a96a07b08e3625dca",
+          "tm": 0.3906682301449993,
+          "identity": 0.28,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-d59766ef4c782ea864bc",
+          "tm": 0.5808467205975838,
+          "identity": 0.28,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-93da499d188caa4e0493",
+          "tm": 0.30142666940624674,
+          "identity": 0.24,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-a525107988f39ac5f3b2",
+          "tm": 0.4288314581029221,
+          "identity": 0.19,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-c56ce7106006fe0731ff",
+          "tm": 0.2711397468957951,
+          "identity": 0.2,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-04fa9b5a285c064f7097",
+          "tm": 0.4469603388195775,
+          "identity": 0.21,
+          "coverage": 1.0
+        }
+      ]
+    },
+    {
+      "stem": "proteina-938b23882ed36cdd4619",
+      "comparisons": [
+        {
+          "other": "proteina-e44a96a07b08e3625dca",
+          "tm": 0.3524943418820196,
+          "identity": 0.28,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-d59766ef4c782ea864bc",
+          "tm": 0.24649656064499442,
+          "identity": 0.2,
+          "coverage": 0.93
+        },
+        {
+          "other": "proteina-93da499d188caa4e0493",
+          "tm": 0.3371976445720172,
+          "identity": 0.22,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-a525107988f39ac5f3b2",
+          "tm": 0.31286033650462514,
+          "identity": 0.25,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-c56ce7106006fe0731ff",
+          "tm": 0.506357079332076,
+          "identity": 0.28,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-04fa9b5a285c064f7097",
+          "tm": 0.2881504924817409,
+          "identity": 0.22,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-05e1d3d5bf4adb5fadee",
+          "tm": 0.2653744661326116,
+          "identity": 0.12,
+          "coverage": 1.0
+        }
+      ]
+    },
+    {
+      "stem": "proteina-328857d989f2700fd5de",
+      "comparisons": [
+        {
+          "other": "proteina-e44a96a07b08e3625dca",
+          "tm": 0.35365728972002786,
+          "identity": 0.2833333333333333,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-d59766ef4c782ea864bc",
+          "tm": 0.28761577646517306,
+          "identity": 0.23333333333333334,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-93da499d188caa4e0493",
+          "tm": 0.37910077522237795,
+          "identity": 0.26666666666666666,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-a525107988f39ac5f3b2",
+          "tm": 0.3037586868926191,
+          "identity": 0.23333333333333334,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-c56ce7106006fe0731ff",
+          "tm": 0.32003546339630584,
+          "identity": 0.25,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-04fa9b5a285c064f7097",
+          "tm": 0.2703549619517182,
+          "identity": 0.26666666666666666,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-05e1d3d5bf4adb5fadee",
+          "tm": 0.23504488404157234,
+          "identity": 0.13333333333333333,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-938b23882ed36cdd4619",
+          "tm": 0.3472047884110597,
+          "identity": 0.26666666666666666,
+          "coverage": 0.9833333333333333
+        }
+      ]
+    },
+    {
+      "stem": "proteina-5d0a4630c035b842d19d",
+      "comparisons": [
+        {
+          "other": "proteina-e44a96a07b08e3625dca",
+          "tm": 0.4871774708628026,
+          "identity": 0.21666666666666667,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-d59766ef4c782ea864bc",
+          "tm": 0.2408677137360548,
+          "identity": 0.23333333333333334,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-93da499d188caa4e0493",
+          "tm": 0.5178724013724576,
+          "identity": 0.18333333333333332,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-a525107988f39ac5f3b2",
+          "tm": 0.49905517703906355,
+          "identity": 0.2833333333333333,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-c56ce7106006fe0731ff",
+          "tm": 0.5962746238679087,
+          "identity": 0.23333333333333334,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-04fa9b5a285c064f7097",
+          "tm": 0.37099617458929096,
+          "identity": 0.2833333333333333,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-05e1d3d5bf4adb5fadee",
+          "tm": 0.23214161798407737,
+          "identity": 0.11666666666666667,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-938b23882ed36cdd4619",
+          "tm": 0.49474420303819183,
+          "identity": 0.23333333333333334,
+          "coverage": 1.0
+        },
+        {
+          "other": "proteina-328857d989f2700fd5de",
+          "tm": 0.3630120431308987,
+          "identity": 0.05,
+          "coverage": 1.0
+        }
+      ]
+    }
+  ],
+  "excluded_reference_records": []
+}

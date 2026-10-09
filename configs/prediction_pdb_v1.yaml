@@ -1,0 +1,28 @@
+definition_version: prediction-pdb-v1.0.0
+dataset_version: 1.0.0
+seed: 2026091101
+count: 10
+length_strata:
+- min: 40
+  max: 550
+  count: 10
+selection:
+  release_from: '2024-01-01'
+  release_to: '2026-09-10'
+  method: X-RAY DIFFRACTION
+  max_resolution: 2.5
+  max_pairwise_tm_similarity: 0.65
+  max_sequence_identity: 0.3
+  sequence_coverage: 0.8
+  require_full_entity_sequence: true
+  require_monomeric_assembly: true
+  allow_nonwater_ligands: false
+  candidate_limit: 2000
+  diversity_features:
+  - shape_singular_ratio_2
+  - shape_singular_ratio_3
+  - length_divided_by_550
+  length_matching: Not exactly length matched; strict complete monomer screening takes
+    priority.
+metric_config: configs/prediction_v1.yaml
+reference_kind: experimental_pdb

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "structure-prediction-benchmark-llm"
+version = "0.1.0"
+description = "Frozen F01/F02 sequence-to-structure benchmark for tool-free language models"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dependencies = ["numpy>=1.24", "gemmi>=0.6", "pyyaml>=6.0", "pydantic>=2.5", "tiktoken>=0.5", "pyarrow>=15", "tmtools==0.3.0", "biopython>=1.84"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "ruff>=0.4"]
+batch = ["together>=2.0.0"]
+
+[project.scripts]
+structure-prediction-benchmark = "pdbthink.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

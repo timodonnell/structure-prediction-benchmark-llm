@@ -1,0 +1,44 @@
+# F01 is reference agreement with computational designs, not experimental truth.
+definition_version: prediction-v1.0.0
+dataset_version: "1.0.0"
+seed: 2026091001
+count: 10
+length_quotas: {60: 2, 100: 2, 200: 2, 300: 2, 400: 1, 500: 1}
+source:
+  repository: https://github.com/Open-Athena/MarinFold
+  revision: cba806f10f05a8d34dbf307f705bccf028f2c3f0
+  experiment: exp278_data_proteina_structural_diversity
+  subset: completed-pilot-reference-screen
+  reference_geometry: esmfold_refold
+  secondary_geometry: proteina_original_ca
+selection:
+  min_plddt: 70.0
+  max_self_consistency_rmsd: 2.0
+  max_pairwise_tm_similarity: 0.65
+  max_sequence_identity: 0.30
+  sequence_identity_denominator: shorter_sequence
+  sequence_coverage: 0.80
+  require_upstream_reference_screen: true
+metrics:
+  primary: lddt_ca
+  lddt_inclusion_radius: 15.0
+  lddt_thresholds: [0.5, 1.0, 2.0, 4.0]
+  lddt_reduction: mean_residue
+  lddt_min_sequence_separation: 1
+  tm_backend: TMscore-2022-02-27
+  tm_source_sha256: 02d24a35857b1076a432e97c4d63cad7993ac2cc6585a1b85a7c33031c84f8b1
+  tm_normalisation: reference_length
+  residue_correspondence: sequence_index
+  backbone_atoms: [N, CA, C, O]
+  coordinate_decimals: 3
+  max_response_characters: 1000000
+geometry_diagnostics:
+  adjacent_ca_min: 2.7
+  adjacent_ca_max: 4.2
+  nonlocal_ca_clash: 2.5
+  nonlocal_min_sequence_separation: 3
+  covalent_bonds:
+    N-CA: [1.2, 1.7]
+    CA-C: [1.2, 1.7]
+    C-O: [1.0, 1.5]
+    C-N: [1.1, 1.6]
